@@ -121,16 +121,16 @@ module.exports = function(grunt) {
     concat: {
       scripts: {
         src: [
-          'vendor/jQuery-ajaxTransport-XDomainRequest/jquery.xdomainrequest.min.js',
-          'vendor/pathjs/path.js',
-          'vendor/handlebars/handlebars.js',
-          'vendor/jquery.scrollTo/jquery.scrollTo.js',
+          //'vendor/jQuery-ajaxTransport-XDomainRequest/jquery.xdomainrequest.min.js',
+          //'vendor/pathjs/path.js',
+          //'vendor/handlebars/handlebars.js',
+          //'vendor/jquery.scrollTo/jquery.scrollTo.js',
           'build/templates.js',
-          'vendor/detectjs/detect.min.js',
-          'vendor/frontend/app/assets/js/components/__helper.js',
-          'vendor/frontend/app/assets/js/components/__options.js',
-          'vendor/bootstrap/js/transition.js',
-          'vendor/bootstrap/js/collapse.js',
+          //'vendor/detectjs/detect.min.js',
+          //'vendor/frontend/app/assets/js/components/__helper.js',
+          //'vendor/frontend/app/assets/js/components/__options.js',
+          //'vendor/bootstrap/js/transition.js',
+          //'vendor/bootstrap/js/collapse.js',
           'build/_<%= pkg.name %>.js'
         ],
         dest: 'build/<%= pkg.name %>.v<%= pkg.version %>.min.js'
@@ -174,17 +174,6 @@ module.exports = function(grunt) {
           dest: '',
           type: 'css',
           ext: '.min.css'
-        },
-
-        {
-          assets: [{
-            src: 'build/studenthandbok-illustrations.js',
-            dest: 'build/studenthandbok-illustrations.js'
-          }],
-          key: 'assets',
-          dest: '',
-          type: 'js',
-          ext: '.min.js'
         }]
       },
       deploy: {
@@ -212,19 +201,7 @@ module.exports = function(grunt) {
           dest: '',
           type: 'css',
           ext: '.min.css'
-        },
-
-        {
-          assets: [{
-            src: 'build/studenthandbok-illustrations.js',
-            dest: 'build/studenthandbok-illustrations.js'
-          }],
-          key: 'assets',
-          dest: '',
-          type: 'js',
-          ext: '.min.js'
-        }
-      ]
+        }]
     }
   },
   secret: grunt.file.readJSON('secret.json'),
