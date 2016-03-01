@@ -1,0 +1,17 @@
+// Imports
+@import '../../../vendor/sass-mq/mq';
+@import '../../../vendor/frontend/app/assets/sass/variables/_standard.scss';
+
+// -----------------------------------------------------------
+// -----------------------------------------------------------
+// Output
+
+
+@include mq($until: small) {}
+
+@include mq($from: small, $until: large) {}
+
+@include mq($from: large) {}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dppx) {}
