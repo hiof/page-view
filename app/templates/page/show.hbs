@@ -4,6 +4,9 @@
       <h1>{{capitalizeFirstLetter pagetitle}}</h1>
     </header>
     {{{contents}}}
+    {{#if specialfunction}}
+      {{{specialfunction}}}
+    {{/if}}
     <footer>
       <p>
       {{#if time_modified}}
